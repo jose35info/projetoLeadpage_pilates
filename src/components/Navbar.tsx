@@ -24,13 +24,29 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const scrollToSection = (href: string) => {
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-    setIsOpen(false);
-  };
+ const scrollToSection = (href: string) => {
+  const element = document.querySelector(href) as HTMLElement;
+  const header = document.querySelector('header') as HTMLElement;
+
+  if (!element || !header) return;
+
+  // 1️⃣ fecha o menu
+  setIsOpen(false);
+
+  // 2️⃣ espera o menu SUMIR do DOM (Framer Motion)
+  setTimeout(() => {
+    const headerHeight = header.offsetHeight;
+    const elementTop = element.getBoundingClientRect().top;
+    const scrollTop = window.pageYOffset;
+
+    window.scrollTo({
+      top: elementTop + scrollTop - headerHeight,
+      behavior: 'smooth',
+    });
+  }, 350); // tempo ligeiramente MAIOR que a animação
+};
+
+
 
   return (
     <header
@@ -75,7 +91,7 @@ const Navbar = () => {
               onClick={() => scrollToSection('#contato')}
               className="btn-primary rounded-full px-6"
             >
-              Agendar Aula Experimental
+              Agendar Aula Avaliativa
             </Button>
           </div>
 
@@ -97,9 +113,9 @@ const Navbar = () => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="lg:hidden bg-background border-t border-border"
+            className="lg:hidden bg-background border-t border-border overflow-hidden"
           >
-            <div className="container-custom py-6 flex flex-col gap-4">
+            <div className="px-6 py-6 flex flex-col gap-4">
               {navLinks.map((link) => (
                 <a
                   key={link.href}
@@ -117,7 +133,7 @@ const Navbar = () => {
                 onClick={() => scrollToSection('#contato')}
                 className="btn-primary rounded-full mt-4"
               >
-                Agendar Aula Experimental
+                Agendar Aula Avaliativa
               </Button>
             </div>
           </motion.div>

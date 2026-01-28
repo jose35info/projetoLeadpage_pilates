@@ -101,7 +101,7 @@ const Contact = () => {
      JSX
   ========================= */
   return (
-    <section id="contato" className="section-padding bg-secondary/30">
+    <section id="contato" className="section-padding  bg-secondary/30">
       <div className="container-custom">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -113,7 +113,9 @@ const Contact = () => {
             Contato
           </span>
           <h2 className="heading-section mb-4">
-            Agende Sua Aula Experimental
+            Solicite sua Aula Avaliativa 
+
+
           </h2>
           <p className="text-body">
             Preencha o formulário abaixo ou entre em contato pelo WhatsApp.

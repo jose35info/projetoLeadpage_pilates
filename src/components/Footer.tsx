@@ -57,7 +57,7 @@ const Footer = () => {
               >
                 <Facebook className="w-5 h-5" />
               </a>
-              <a
+              {/* <a
                 href="https://youtube.com"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -65,7 +65,7 @@ const Footer = () => {
                 aria-label="YouTube"
               >
                 <Youtube className="w-5 h-5" />
-              </a>
+              </a> */}
             </div>
           </div>
         </div>

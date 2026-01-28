@@ -10,23 +10,15 @@ const services = [
   {
     icon: Users,
     title: 'Aulas em Grupo',
-    description: 'Turmas reduzidas de até 4 alunos para garantir qualidade e acompanhamento adequado.',
+    description: 'Turmas reduzidas de até 3 alunos para garantir qualidade e acompanhamento adequado.',
   },
-  {
-    icon: Heart,
-    title: 'Pilates Clínico',
-    description: 'Reabilitação de lesões, tratamento de dores crônicas e correção postural com fisioterapeutas.',
-  },
-  {
-    icon: Baby,
-    title: 'Gestantes & Pós-parto',
-    description: 'Programa especializado para cada fase da gestação e recuperação pós-parto.',
-  },
-  {
-    icon: Activity,
-    title: 'Pilates Esportivo',
-    description: 'Performance e condicionamento para atletas e praticantes de atividades físicas.',
-  },
+ 
+  // {
+  //   icon: Baby,
+  //   title: 'Gestantes & Pós-parto',
+  //   description: 'Programa especializado para cada fase da gestação e recuperação pós-parto.',
+  // },
+  
   {
     icon: Calendar,
     title: 'Agendamento Online',

@@ -3,7 +3,7 @@ import { MapPin, Clock, Phone, Mail } from 'lucide-react';
 
 const Location = () => {
   return (
-    <section id="localizacao" className="section-padding">
+    <section id="localizacao" className="section-padding scroll-mt-24 lg:scroll-mt-32">
       <div className="container-custom">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

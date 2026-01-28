@@ -12,39 +12,40 @@ const instructors = [
   {
     id: 1,
     name: 'Alana Maria Pinho de Brito',
-    specialty: 'Sócia gerente & instrutora da estação pilates Alana Brito',
+    specialty: 'Sócia gerente & instrutora da Estação Pilates Alana Brito',
     image: instructor1,
-    bio: 'Profissional de Educação Física desde 1984, especialista em movimento e longevidade. Experiência comprovada para quem entende que o melhor momento para cuidar da saúde é agora. Com 21 anos de dedicação ao método Pilates, especializei-me em transformar a qualidade de vida do público 30+. Nosso foco é promover um envelecimento ativo, força funcional e bem-estar através de um acompanhamento personalizado. Oferecemos aulas em grupo, duplas ou individuais, adaptadas cada movimento às nescessidades e objetivos de quem busca longevidade com autonomia e vitalidade.',
-    credentials: ['CREFITO 12345-F', 'Stott Pilates Certified', 'Especialista em Dor Crônica'],
+    bio: 'Profissional de Educação Física desde 1984, especialista em movimento e longevidade. Experiência comprovada para quem entende que o melhor momento para cuidar da saúde é agora. Com 21 anos de dedicação ao método Pilates, especializei-me em transformar a qualidade de vida do público 30+. Nosso foco é promover um envelhecimento ativo, força funcional e bem-estar através de um acompanhamento personalizado. Oferecemos aulas em grupo, duplas ou individuais, adaptadas às nescessidades e objetivos de quem busca longevidade com autonomia e vitalidade.',
+    credentials: ['CREF 002679-G/CE', 'Polestar Pilates Brasil', 'Pilates Clássico por Sandra Ramos'],
   },
-  {
-    id: 2,
-    name: ' Ari Falconeri',
-    specialty: 'Instrutor de Pilates',
-    image: instructor2,
-    bio: 'Educador físico com formação em Pilates Clínico e contemporâneo. Formado em treinamento baseado em complexidade. Especialista em exercício Fisíco para grupos especiais com foco em idosos, doenças cardiovasculares, diabetes, pessoas em tratamento ou pós-tratamento oncologico.',
-    credentials: ['CREF 67890-G', 'Polestar Pilates', 'Treinamento Funcional'],
-  },
+ 
   {
     id: 3,
     name: 'Giulianna de Brito Brasil',
     specialty: 'Instrutora de Pilates & Fisioterapeuta',
     image: instructor3,
-    bio: 'Formação em Fisioterapia. Formação em Quiropraxia. Formação em Pilates clínico- Clínica Fisios. Formação em Pilates Classico- Breathe Deeply',
-    credentials: ['CREFITO 11223-F', 'Pilates na Gestação', 'Saúde Pélvica'],
+    bio: 'Fisioterapeuta com especialidade em Quiropraxia. Formação em Pilates contemporâneo pela Clínica Fisios. Formação em Pilates Classico- Sandra Ramos',
+    credentials: ['CREFITO 344942-F', 'Pilates Contemporâneo', 'Pilates Clássico'],
   },
   {
   id: 4,
   name: 'Juliana Pinto Queiroz',
   specialty: 'Instrutora de Pilates  & Fisioterapeuta',
   image: instructor4,
-  bio: 'Formação em fisioterapia. TERAPIA MANUAL. PILATES CONTEMPORÂNEO DOM PILTES. Formação em Pilates Classico- Breathe Deeply',
+  bio: 'Fisioterapeuta com especialidade em Terapia Manual. Formação em Pilates Contemporâneo por Dom Pilates  e Pilates Clássico por Sandra Ramos',
   credentials: [
-    'CREF 44556-G',
-    'Pilates Funcional',
-    'Mobilidade Articular'
+    'CREFITO 237995-F',
+    'Pilates Contemporâneo',
+    'Pilates Clássico'
   ],
 },
+ {
+    id: 2,
+    name: ' Ari Falconeri',
+    specialty: 'Instrutor de Pilates',
+    image: instructor2,
+    bio: 'Profissional de Educação Física com formação em Pilates contemporâneo e treinamento Baseado em complexidade. Especialista em exercício fisíco para grupos especiais com foco em idosos, diabetes, pessoas em tratamento ou pós-tratamento oncologico.',
+    credentials: ['CREF 009150-G/CE', 'Pilates Contemporâneo', 'Treinamento Baseado em Complexidade'],
+  },
 
 ];
 
@@ -113,7 +114,7 @@ const InstructorCard = ({ instructor }: { instructor: typeof instructors[0] }) =
 
 const Instructors = () => {
   return (
-    <section id="professores" className="section-padding bg-secondary/30">
+    <section id="professores" className="section-padding bg-secondary/30 scroll-mt-24">
       <div className="container-custom">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

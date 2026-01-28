@@ -3,7 +3,7 @@ import { MessageCircle } from 'lucide-react';
 
 const WhatsAppButton = () => {
   const openWhatsApp = () => {
-    const message = encodeURIComponent('Olá!Venho pelo site Gostaria de saber mais sobre o Estação Pilates e agendar uma aula experimental.');
+    const message = encodeURIComponent('Olá!Venho pelo site Gostaria de saber mais sobre o Estação Pilates e agendar uma aula avaliativa.');
     window.open(`https://wa.me/558597423400?text=${message}`, '_blank');
   };
 

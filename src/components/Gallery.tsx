@@ -1,14 +1,17 @@
 import { motion } from 'framer-motion';
 import studio1 from '@/assets/studio-1.jpg';
-import studio2 from '@/assets/studio-2.jpeg';
+import studio2 from '@/assets/studio-2.jpg';
 import studio3 from '@/assets/studio-3.jpg';
 import studio4 from '@/assets/studio-4.jpg';
+import studio5 from '@/assets/studio-5.jpg';
+
 
 const images = [
   { src: studio1, alt: 'Studio de Pilates com equipamentos modernos', span: 'col-span-2 row-span-2' },
   { src: studio2, alt: 'Aula de Pilates em grupo', span: 'col-span-1 row-span-1' },
   { src: studio3, alt: 'Detalhes dos aparelhos de Pilates', span: 'col-span-1 row-span-1' },
   { src: studio4, alt: 'Recepção acolhedora do studio', span: 'col-span-2 row-span-1' },
+  { src: studio5, alt: 'Recepção acolhedora do studio', span: 'col-span-2 row-span-1' }
 ];
 
 const Gallery = () => {

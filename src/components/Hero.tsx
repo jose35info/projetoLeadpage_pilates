@@ -12,12 +12,12 @@ const Hero = () => {
   };
 
   const openWhatsApp = () => {
-    const message = encodeURIComponent('Olá! Venho pelo site. Gostaria de agendar uma aula experimental no Estação Pilates.');
+    const message = encodeURIComponent('Olá! Venho pelo site. Gostaria de agendar uma aula avaliativa  no Estação Pilates.');
     window.open(`https://wa.me/558597423400?text=${message}`, '_blank');
   };
 
   return (
-    <section id="inicio" className="relative min-h-screen flex items-center">
+    <section id="inicio" className="relative  min-h-screen flex items-center">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
@@ -72,7 +72,7 @@ const Hero = () => {
               size="lg"
               className="btn-primary rounded-full px-8 py-6 text-base group"
             >
-              Agendar Aula Experimental
+              Agendar Aula Avaliativa
               <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
             </Button>
             <Button
