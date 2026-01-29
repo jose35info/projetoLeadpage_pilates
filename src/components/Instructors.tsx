@@ -44,7 +44,7 @@ const instructors = [
     specialty: 'Instrutor de Pilates',
     image: instructor2,
     bio: 'Profissional de Educação Física com formação em Pilates contemporâneo e treinamento Baseado em complexidade. Especialista em exercício fisíco para grupos especiais com foco em idosos, diabetes, pessoas em tratamento ou pós-tratamento oncologico.',
-    credentials: ['CREF 009150-G/CE', 'Pilates Contemporâneo', 'Treinamento Baseado em Complexidade'],
+    credentials: ['CREF 009150-G/CE', 'Pilates Contemporâneo'],
   },
 
 ];

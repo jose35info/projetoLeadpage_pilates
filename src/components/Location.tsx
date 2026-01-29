@@ -80,7 +80,8 @@ const Location = () => {
                     Horário de Funcionamento
                   </h3>
                   <div className="text-muted-foreground space-y-1">
-                    <p>Segunda a Sexta: 7h às 20h30min</p>
+                    <p>Segunda a Quinta- Feira: 7h às 20h30min</p>
+                    <p>Sexta-feira: 7h às 11h</p>
                     <p>Sábado: Fechado</p>
                     <p>Domingo: Fechado</p>
                   </div>
