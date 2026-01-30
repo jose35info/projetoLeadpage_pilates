@@ -43,8 +43,7 @@ const Services = () => {
             Soluções para Cada Objetivo
           </h2>
           <p className="text-body">
-            Oferecemos diferentes modalidades de Pilates para atender suas necessidades, 
-            desde reabilitação até condicionamento esportivo.
+            Oferecemos um método completo e integrado, com aulas estruturadas exclusivamente para as suas necessidades: seja para recuperar a mobilidade, fortalecer o corpo ou promover uma vida ativa e sem dores.
           </p>
         </motion.div>
 
